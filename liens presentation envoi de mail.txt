@@ -1,0 +1,15 @@
+Je classe les liens par étape de design de l'email.
+
+1. MJML (nécessaire pour générer des templates HTML responsive)
+https://mjml.io/
+la doc: https://mjml.io/documentation/
+l'éditeur en ligne: https://mjml.io/try-it-live
+
+2. Si vous voulez envoyer le mail avec un PHP
+https://openclassrooms.com/fr/courses/1156346-e-mail-envoyer-un-e-mail-en-php#r-1156563
+
+3. Si vous voulez utiliser un logiciel d'envoi de mail :
+mailchimp: https://us7.admin.mailchimp.com/
+mailjet : https://www.mailjet.com
+
+Sur certains logiciels, on vous demande des informations personnelles. On peut mettre des infos bidon pour masquer.
