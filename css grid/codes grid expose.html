@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Les grilles en CSS</title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		!-- Optional theme -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+-->
+<!-- Latest compiled and minified JavaScript -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>CSS Grid</h1><br>
+	<p>Les grilles (grid) permettent d'organiser des éléments dans une page, d'une manière qui s'adapte au redimensionnement de la page. C'est un système de layout bi-dimensionnel, c'est-à-dire qu'il gère le sens des colonnes et des lignes.</p><br>
+
+	<p>Son principe ressemble à celui de la bataille navale : il consiste à établir une grille et placer les éléments dessus avec des coordonnées. </p>
+	<br><br><br>
+
+	<div id="ex1">
+		<div class="header1">Header</div>
+		<div class="menu1">Menu</div>
+		<div class="article1">Mon premier article</div>
+		<div class="article2">Mon deuxième article</div>
+		<div class="footer1">Footer</div>
+	</div>
+	<br><br>
+	<h2>Lignes, colonnes et unités</h2>
+	<p>Les grid requièrent, comment la flexbox, un conteneur, et des éléments à l'intérieur, tous enfants directs de ce conteneur. Une fois ce contenant défini, il faut lui indiquer par <strong>'display : grid'</strong> que le système appliqué sera celui des grid. Puis, il faut définir la grille en lui donnant un <strong>nombre de colonnes et un nombre de lignes</strong>. <br>Ces lignes et colonnes peuvent être de différentes unités, fixes, ou proportionnelles, et tout cela mélangé dans la même grille.
+	Par exemple, on peut choisir une colonne de 100px, une deuxième de 30% et une troisième de 1fr : la largeur de la première colonne sera fixe, les autres varieront suivant la taille de la fenêtre.</p>
+	<p><i>[1fr? Le fractionnaire est une nouvelle unité qui consiste à diviser l'espace restant par autant de fractions que l'on veut.]</i></p>
+	<p>Pour établir la grille : grid-template-columns et grid-template-rows. A noter : firefox permet de visualiser la grille dans l'examinateur.</p><br>
+	<div id="limage"><img src="row_col.png" alt="Grid template"></div><br>
+	<div id="limage"><img src="templategrid.JPG" alt="Grid template"></div>
+
+	<p>Une fois la grille établie, il faut donner les coordonnées aux éléments : </p>
+	<br>
+	<div id="limage"><img src="rowetcolumn.jpg" alt="Grid template"></div><br>
+	<div id="limage"><img src="gridlines.png" alt="Grid template"></div>
+<br>
+	<p>Exemple 2</p>
+	<div id="ex2">
+		<div class="header2">Header</div>
+		<div class="menu2">Menu</div>
+		<div class="article21">Article 1</div>
+		<div class="article22">Article 2</div>
+		<div class="footer2">Footer</div>
+	</div>
+<p>Il existe quelques fonctionnalités supplémentaires comme le grid gap (que l'on peut décomposer en grid-row-gap et grid-column-gap) qui permet de mettre une petite marge entre tous les éléments.</p>
+
+</body>
+</html>

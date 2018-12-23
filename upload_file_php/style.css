@@ -1,0 +1,39 @@
+h1{
+
+
+text-align: center;
+color:purple;font-size:350%;
+
+}
+
+
+.label{
+  font-size: 150%;
+}
+input[type=file]{
+  color:black;
+ font-weight: bold;
+text-align: center;
+background-color: #aaa;
+border-color: 1px solid black;
+height:50px;
+width:270px;
+ }
+input[type=text]{
+  color:black;
+ font-weight: bold;
+text-align: center;
+background-color: white;
+border-color: 1px solid black;
+
+ }
+
+input{
+  border-radius: 13%;
+  border-color: 1px solid black;
+  cursor:pointer;
+height:50px;
+width:150px;
+
+
+}

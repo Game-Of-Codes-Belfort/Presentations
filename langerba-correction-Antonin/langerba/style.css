@@ -1,0 +1,56 @@
+nav {
+    color:white;
+    background:#003c5a;
+    padding: 10px 0;
+}
+
+.navbar > .container {
+    justify-content: left;
+    position: relative;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+.fa-phone {
+    position:absolute;
+    right:10px;
+    top: 15px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+
+}
+
+.navbar-dark .navbar-toggler {
+
+    border-color: rgba(255,255,255,0);
+
+}
+
+.dropdown:hover > .dropdown-menu {
+    display:block;
+}
+
+.dropdown-item ul {
+    display: none;
+}
+
+.dropdown-item:hover ul {
+    display: block;
+}
+
+body {
+    padding-top:56px;
+}
+
+#myCarousel {
+    background:orange;
+    height:450px;
+}
+
+.carousel-inner, .carousel-inner > * {
+    height:100%;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">
+<h2>The XMLHttpRequest Object</h2>
+
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+</div>
+
+<script>
+//
+function loadDoc() {
+  var xhttp = new XMLHttpRequest(); // on a cree un variable en java script, var xhttp=nom de veriable//
+  //handling the response that is coming from server//
+
+  //xhttp=variable//
+  //onreadystatechage=declartion of function what ever we want//
+  //onreadystate=property.readystate hold the status of varible XMLHttpRequest...Holds the status of the XMLHttpRequest. 
+// 0: request not initialized 
+// 1: server connection established
+// 2: request received 
+// 3: processing request 
+// 4: request finished and response is ready//
+
+  
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      //differnt status are	200: "OK", 403: "Forbidden", 404: "Page not found"//
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+
+  // how to sent a request to server//
+  xhttp.open("GET", "ajax_info.txt", true);//open and send are method..ajax-info.txt=url..it can be any file.as u want//
+  xhttp.send();
+}
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,98 @@
+p {
+	color: #534631;
+	font-weight: 501;
+}
+body {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	font-family: 'Century Gothic';
+	background-image: url('backgrd1.jpg');
+	background-size: cover;
+	background-position: center;
+}
+p, h1, h2 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+h1 {
+	margin-top: 50px;
+}
+#ex1 *, #ex2 * {
+	font-size: 3em;
+	text-align: center;
+
+}
+#ex1 {
+	display: grid;
+	grid-template: 1fr 1fr 1fr 1fr 1fr/ 2fr 3fr 1fr;
+	/* équivalent à :
+	grid-template-rows : 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: 2fr 3fr 1fr; 
+	*/
+	/*grid-gap: 10px;*/
+	height: 500px;
+}
+.header1 {
+	background-color: blue;
+	grid-area: 1 / 1 / span 1 / span 3;
+	/* équivalent à :
+	grid-row-start: 1; => commence sur la première ligne
+	grid-column-start: 2; => commence sur la 2e colonne
+	grid-row-end: 3; => l'élément va jusqu'à la 3e ligne
+	grid-column-end: span 2; => l'élément s'étend sur deux carrés
+	Et tout ça est résumé par la super-propriété :
+	grid-area: row-start / column start / row end / column end;
+	*/
+}
+.footer1 {
+	background-color: red;
+	grid-area: 5 / 1 / 5 / span 3;
+}
+.menu1 {
+	background-color: pink;
+	grid-area: 2 / 1 / span 3 / 1;
+}
+.article1 {
+	background-color: orange;
+	grid-area: 2 / 2 / span 2 / span 2;
+}
+.article2 {
+	background-color: green;
+	grid-area: 4 / 2 / 4 / span 2;
+}
+
+#limage * {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+
+
+
+
+
+#ex2 {
+	display: grid;
+	grid-template: 2fr 1fr 1fr 1fr/ 1fr 1fr 1fr 1fr 1fr;
+}
+.header2{
+	background-color: pink;
+
+}
+.footer2{
+	background-color: yellow;
+	grid-area: 4 / 3 / 4 / span 3;
+}
+.article21{
+	background-color: brown;
+}
+.article22{
+	background-color: #bad958;
+grid-area: 4 / 1 / 4 / span 2;
+}
+.menu2 {
+	background-color: #81d4c0;
+}
